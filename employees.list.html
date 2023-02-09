@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>dash</title>
+    <title>Employees list</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
     <style>
         .brand-gradient{
@@ -41,7 +41,7 @@
                         <a href="dash.html" class="nav-link active" aria-current="page"> Home</a>
                     </li>
                     <li class="nav-item">
-                        <a href="#" class="nav-link" aria-current="page"> Employee</a>
+                        <a href="employees.list.html" class="nav-link" aria-current="page"> Employee</a>
                     </li>
                     <li class="nav-item">
                         <a href="#" class="nav-link" aria-current="page"> Jobs</a>
@@ -71,6 +71,302 @@
     </nav>
     <!--nav-->
 
+    <!--employees data-->
+    <div class="container">
+        <div class="row justify-content-center">
+            <!--side bar-->
+            <div class="col-md-2">
+                <div class="list-group shadow-sm small mb-3">
+                    <div class="list-group-item active">
+                        Employee Data
+                    </div>
+                    <a 
+                    href="#" 
+                    class="list-group-item list-group-item-action"
+                    data-bs-toggle="modal"
+                    data-bs-target="#add_employee">Add Employee</a>
+                    <a href="employees.list.html" class="list-group-item list-group-item-action">View Employees</a>
+                </div>
+                <div class="list-group shadow-sm small mb-3">
+                    <div class="list-group-item active">
+                        Related Links
+                    </div>
+                    <a href="#" class="list-group-item list-group-item-action">View Jobs</a>
+                </div>
+            </div>
+            <!--side bar-->
+            <div class="col-md-10">
+                <div class="card shadow-sm border-0 mb-3">
+                    <div class="card-header text-bg-dark text-center">
+                        employees list
+                    </div>
+                    <table class="table table-bordered small table-sm allign-middle mb-0">
+                        <tr class="table-secondary"></tr>
+                        <th>ID</th>
+                        <th>Employee ID</th>
+                        <th>Name</th>
+                        <th>Email ID</th>
+                        <th>Details</th>
+                        <th>Edit</th>
+                        <th>Delete</th>
+                        <tr>
+                            <td>1</td>
+                            <td>285</td>
+                            <td>Racha OBA</td>
+                            <td>rachaould@gmail.com</td>
+                            <td>
+                                <div class="d-grid">
+                                    <a 
+                                    href="#" 
+                                    class="btn tn-sm btn-primary"
+                                    data-bs-toggle="modal"
+                                    data-bs-target="#employee_detail">
+                                    Details</a>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="d-grid">
+                                    <a 
+                                    href="#" 
+                                    class="btn tn-sm btn-warning"
+                                    data-bs-toggle="modal"
+                                    data-bs-target="#employee_edit">
+                                    Edit</a>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="d-grid">
+                                    <a 
+                                    href="#" 
+                                    class="btn tn-sm btn-danger"
+                                    data-bs-toggle="modal"
+                                    data-bs-target="#employee_delete">
+                                    Delete</a>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>385</td>
+                            <td>Racha OBA</td>
+                            <td>rachaould@gmail.com</td>
+                            <td>
+                                <div class="d-grid">
+                                    <a 
+                                    href="#" 
+                                    class="btn tn-sm btn-primary"
+                                    data-bs-toggle="modal"
+                                    data-bs-target="#employee_detail">
+                                    Details</a>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="d-grid">
+                                    <a 
+                                    href="#" 
+                                    class="btn tn-sm btn-warning"
+                                    data-bs-toggle="modal"
+                                    data-bs-target="#employee_edit">
+                                    Edit</a>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="d-grid">
+                                    <a 
+                                    href="#" 
+                                    class="btn tn-sm btn-danger"
+                                    data-bs-toggle="modal"
+                                    data-bs-target="#employee_delete">
+                                    Delete</a>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>485</td>
+                            <td>Racha OBA</td>
+                            <td>rachaould@gmail.com</td>
+                            <td>
+                                <div class="d-grid">
+                                    <a 
+                                    href="#" 
+                                    class="btn tn-sm btn-primary"
+                                    data-bs-toggle="modal"
+                                    data-bs-target="#employee_detail">
+                                    Details</a>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="d-grid">
+                                    <a 
+                                    href="#" 
+                                    class="btn tn-sm btn-warning"
+                                    data-bs-toggle="modal"
+                                    data-bs-target="#employee_edit">
+                                    Edit</a>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="d-grid">
+                                    <a 
+                                    href="#" 
+                                    class="btn tn-sm btn-danger"
+                                    data-bs-toggle="modal"
+                                    data-bs-target="#employee_delete">
+                                    Delete</a>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td>585</td>
+                            <td>Racha OBA</td>
+                            <td>rachaould@gmail.com</td>
+                            <td>
+                                <div class="d-grid">
+                                    <a 
+                                    href="#" 
+                                    class="btn tn-sm btn-primary"
+                                    data-bs-toggle="modal"
+                                    data-bs-target="#employee_detail">
+                                    Details</a>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="d-grid">
+                                    <a 
+                                    href="#" 
+                                    class="btn tn-sm btn-warning"
+                                    data-bs-toggle="modal"
+                                    data-bs-target="#employee_edit">
+                                    Edit</a>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="d-grid">
+                                    <a 
+                                    href="#" 
+                                    class="btn tn-sm btn-danger"
+                                    data-bs-toggle="modal"
+                                    data-bs-target="#employee_delete">
+                                    Delete</a>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>6</td>
+                            <td>785</td>
+                            <td>Racha OBA</td>
+                            <td>rachaould@gmail.com</td>
+                            <td>
+                                <div class="d-grid">
+                                    <a 
+                                    href="#" 
+                                    class="btn tn-sm btn-primary"
+                                    data-bs-toggle="modal"
+                                    data-bs-target="#employee_detail">
+                                    Details</a>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="d-grid">
+                                    <a 
+                                    href="#" 
+                                    class="btn tn-sm btn-warning"
+                                    data-bs-toggle="modal"
+                                    data-bs-target="#employee_edit">
+                                    Edit</a>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="d-grid">
+                                    <a 
+                                    href="#" 
+                                    class="btn tn-sm btn-danger"
+                                    data-bs-toggle="modal"
+                                    data-bs-target="#employee_delete">
+                                    Delete</a>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>7</td>
+                            <td>885</td>
+                            <td>Racha OBA</td>
+                            <td>rachaould@gmail.com</td>
+                            <td>
+                                <div class="d-grid">
+                                    <a 
+                                    href="#" 
+                                    class="btn tn-sm btn-primary"
+                                    data-bs-toggle="modal"
+                                    data-bs-target="#employee_detail">
+                                    Details</a>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="d-grid">
+                                    <a 
+                                    href="#" 
+                                    class="btn tn-sm btn-warning"
+                                    data-bs-toggle="modal"
+                                    data-bs-target="#employee_edit">
+                                    Edit</a>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="d-grid">
+                                    <a 
+                                    href="#" 
+                                    class="btn tn-sm btn-danger"
+                                    data-bs-toggle="modal"
+                                    data-bs-target="#employee_delete">
+                                    Delete</a>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>8</td>
+                            <td>985</td>
+                            <td>Racha OBA</td>
+                            <td>rachaould@gmail.com</td>
+                            <td>
+                                <div class="d-grid">
+                                    <a 
+                                    href="#" 
+                                    class="btn tn-sm btn-primary"
+                                    data-bs-toggle="modal"
+                                    data-bs-target="#employee_detail">
+                                    Details</a>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="d-grid">
+                                    <a 
+                                    href="#" 
+                                    class="btn tn-sm btn-warning"
+                                    data-bs-toggle="modal"
+                                    data-bs-target="#employee_edit">
+                                    Edit</a>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="d-grid">
+                                    <a 
+                                    href="#" 
+                                    class="btn tn-sm btn-danger"
+                                    data-bs-toggle="modal"
+                                    data-bs-target="#employee_delete">
+                                    Delete</a>
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--employees data-->
     
     
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"></script> 
