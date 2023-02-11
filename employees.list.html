@@ -367,6 +367,95 @@
         </div>
     </div>
     <!--employees data-->
+
+    <!--add employee modal-->
+    <div 
+        class="modal fade"
+        id="add_employee"
+        data-bs-backdrop="static"
+        tabindex="-1"
+        aria-hidden="true"
+        style="backdrop-filter: blur (5px);">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header text-bg-dark">
+                    <h5 class="modal-title">
+                        Add Empolyee Details
+                    </h5>
+                    <button
+                        type="button"
+                        class="btn-close btn-close-white"
+                        data-bs-dismiss="modal"
+                        aria-label="close"></button>
+                </div>
+                <div class="modal-body">
+                    <form >
+                        <div class="container">
+                            <div class="row gx-3">
+                                <div class="col-md-12">
+                                    <div class="mb-3">
+                                        <input type="date" class="form-control form-control-sm" required>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="mb-3">
+                                        <input type="text" class="form-control form-control-sm" placeholder="First name" required>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="mb-3">
+                                        <input type="text" class="form-control form-control-sm" placeholder="Last name" required>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="mb-3">
+                                        <input type="email" class="form-control form-control-sm" placeholder="Email ID" required>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="mb-3">
+                                        <input type="tel" class="form-control form-control-sm" placeholder="phone" required>
+                                    </div>
+                                </div>
+                                <div class="col-md-12">
+                                    <div class="mb-3">
+                                        <select aria-label="Job assigned" class="form-select form-select-sm">
+                                            <option selected> Select job for Employee</option>
+                                            <option value="graphic designer">graphic designer</option>
+                                            <option value="web designer">web designer</option>
+                                            <option value="web developer">web developer</option>
+                                            <option value="photograph">photograph</option>
+                                            <option value="manager">manager</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col-md-9">
+                                    <div class="d-grid">
+                                        <button
+                                        type="submit"
+                                        class="btn btn-sm btn-success">
+                                        Add Employee</button>
+                                    </div>
+                                </div>
+                                <div class="col-md-3">
+                                    <div class="d-grid">
+                                        <button
+                                        type="button"
+                                        class="btn btn-sm btn-warning"
+                                        data-bs-dismiss="modal"
+                                        aria-label="close">
+                                        Cancel</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <!--add employee modal-->
     
     
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"></script> 
