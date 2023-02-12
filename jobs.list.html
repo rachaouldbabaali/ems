@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Employees list</title>
+    <title>EMS</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
     <style>
         .brand-gradient{
@@ -44,7 +44,7 @@
                         <a href="employees.list.html" class="nav-link" aria-current="page"> Employee</a>
                     </li>
                     <li class="nav-item">
-                        <a href="#" class="nav-link" aria-current="page"> Jobs</a>
+                        <a href="jobs.list.html" class="nav-link" aria-current="page"> Jobs</a>
                     </li>
                 </ul>
                 <forme class="d-flex" role="search">
@@ -71,56 +71,52 @@
     </nav>
     <!--nav-->
 
-    <!--employees data-->
+    <!--Job data-->
     <div class="container">
         <div class="row justify-content-center">
             <!--side bar-->
             <div class="col-md-3">
                 <div class="list-group shadow-sm small mb-3">
                     <div class="list-group-item active">
-                        Employee Data
+                        Job Data
                     </div>
                     <a 
                     href="#" 
                     class="list-group-item list-group-item-action"
                     data-bs-toggle="modal"
-                    data-bs-target="#add_employee">Add Employee</a>
-                    <a href="employees.list.html" class="list-group-item list-group-item-action">View Employees</a>
+                    data-bs-target="#add_job">Add Job</a>
+                    <a href="jobs.list.html" class="list-group-item list-group-item-action">View Jobs</a>
                 </div>
                 <div class="list-group shadow-sm small mb-3">
                     <div class="list-group-item active">
                         Related Links
                     </div>
-                    <a href="#" class="list-group-item list-group-item-action">View Jobs</a>
+                    <a href="employees.list.html" class="list-group-item list-group-item-action">View Employees</a>
                 </div>
             </div>
             <!--side bar-->
             <div class="col-md-9">
                 <div class="card shadow-sm border-0 mb-3">
                     <div class="card-header text-bg-dark text-center">
-                        employees list
+                        Jobs list
                     </div>
                     <table class="table table-bordered small table-sm align-middle mb-0">
                         <tr class="table-secondary "></tr>
                         <th>ID</th>
-                        <th>Employee ID</th>
-                        <th>Name</th>
-                        <th>Email ID</th>
+                        <th>Job</th>
                         <th>Details</th>
                         <th>Edit</th>
                         <th>Delete</th>
                         <tr>
                             <td>1</td>
-                            <td>285</td>
-                            <td>Racha OBA</td>
-                            <td>rachaould@gmail.com</td>
+                            <td>graphic designer</td>
                             <td>
                                 <div class="d-grid">
                                     <a 
                                     href="#" 
-                                    class="btn tn-sm btn-primary"
+                                    class="btn btn-sm btn-primary"
                                     data-bs-toggle="modal"
-                                    data-bs-target="#employee_detail">
+                                    data-bs-target="#job_detail">
                                     Details</a>
                                 </div>
                             </td>
@@ -128,9 +124,9 @@
                                 <div class="d-grid">
                                     <a 
                                     href="#" 
-                                    class="btn tn-sm btn-warning"
+                                    class="btn btn-sm btn-warning"
                                     data-bs-toggle="modal"
-                                    data-bs-target="#employee_edit">
+                                    data-bs-target="#job_edit">
                                     Edit</a>
                                 </div>
                             </td>
@@ -138,25 +134,23 @@
                                 <div class="d-grid">
                                     <a 
                                     href="#" 
-                                    class="btn tn-sm btn-danger"
+                                    class="btn btn-sm btn-danger"
                                     data-bs-toggle="modal"
-                                    data-bs-target="#employee_delete">
+                                    data-bs-target="#job_delete">
                                     Delete</a>
                                 </div>
                             </td>
                         </tr>
                         <tr>
                             <td>2</td>
-                            <td>385</td>
-                            <td>Racha OBA</td>
-                            <td>rachaould@gmail.com</td>
+                            <td>Web designer</td>
                             <td>
                                 <div class="d-grid">
                                     <a 
                                     href="#" 
-                                    class="btn tn-sm btn-primary"
+                                    class="btn btn-sm btn-primary"
                                     data-bs-toggle="modal"
-                                    data-bs-target="#employee_detail">
+                                    data-bs-target="#job_detail">
                                     Details</a>
                                 </div>
                             </td>
@@ -164,9 +158,9 @@
                                 <div class="d-grid">
                                     <a 
                                     href="#" 
-                                    class="btn tn-sm btn-warning"
+                                    class="btn btn-sm btn-warning"
                                     data-bs-toggle="modal"
-                                    data-bs-target="#employee_edit">
+                                    data-bs-target="#job_edit">
                                     Edit</a>
                                 </div>
                             </td>
@@ -174,25 +168,23 @@
                                 <div class="d-grid">
                                     <a 
                                     href="#" 
-                                    class="btn tn-sm btn-danger"
+                                    class="btn btn-sm btn-danger"
                                     data-bs-toggle="modal"
-                                    data-bs-target="#employee_delete">
+                                    data-bs-target="#job_delete">
                                     Delete</a>
                                 </div>
                             </td>
                         </tr>
                         <tr>
                             <td>3</td>
-                            <td>485</td>
-                            <td>Racha OBA</td>
-                            <td>rachaould@gmail.com</td>
+                            <td>Web developer</td>
                             <td>
                                 <div class="d-grid">
                                     <a 
                                     href="#" 
-                                    class="btn tn-sm btn-primary"
+                                    class="btn btn-sm btn-primary"
                                     data-bs-toggle="modal"
-                                    data-bs-target="#employee_detail">
+                                    data-bs-target="#job_detail">
                                     Details</a>
                                 </div>
                             </td>
@@ -200,9 +192,9 @@
                                 <div class="d-grid">
                                     <a 
                                     href="#" 
-                                    class="btn tn-sm btn-warning"
+                                    class="btn btn-sm btn-warning"
                                     data-bs-toggle="modal"
-                                    data-bs-target="#employee_edit">
+                                    data-bs-target="#job_edit">
                                     Edit</a>
                                 </div>
                             </td>
@@ -210,25 +202,23 @@
                                 <div class="d-grid">
                                     <a 
                                     href="#" 
-                                    class="btn tn-sm btn-danger"
+                                    class="btn btn-sm btn-danger"
                                     data-bs-toggle="modal"
-                                    data-bs-target="#employee_delete">
+                                    data-bs-target="#job_delete">
                                     Delete</a>
                                 </div>
                             </td>
                         </tr>
                         <tr>
                             <td>4</td>
-                            <td>585</td>
-                            <td>Racha OBA</td>
-                            <td>rachaould@gmail.com</td>
+                            <td>photograph</td>
                             <td>
                                 <div class="d-grid">
                                     <a 
                                     href="#" 
-                                    class="btn tn-sm btn-primary"
+                                    class="btn btn-sm btn-primary"
                                     data-bs-toggle="modal"
-                                    data-bs-target="#employee_detail">
+                                    data-bs-target="#job_detail">
                                     Details</a>
                                 </div>
                             </td>
@@ -236,9 +226,9 @@
                                 <div class="d-grid">
                                     <a 
                                     href="#" 
-                                    class="btn tn-sm btn-warning"
+                                    class="btn btn-sm btn-warning"
                                     data-bs-toggle="modal"
-                                    data-bs-target="#employee_edit">
+                                    data-bs-target="#job_edit">
                                     Edit</a>
                                 </div>
                             </td>
@@ -246,25 +236,23 @@
                                 <div class="d-grid">
                                     <a 
                                     href="#" 
-                                    class="btn tn-sm btn-danger"
+                                    class="btn btn-sm btn-danger"
                                     data-bs-toggle="modal"
-                                    data-bs-target="#employee_delete">
+                                    data-bs-target="#job_delete">
                                     Delete</a>
                                 </div>
                             </td>
                         </tr>
                         <tr>
                             <td>6</td>
-                            <td>785</td>
-                            <td>Racha OBA</td>
-                            <td>rachaould@gmail.com</td>
+                            <td>manager/td>
                             <td>
                                 <div class="d-grid">
                                     <a 
                                     href="#" 
-                                    class="btn tn-sm btn-primary"
+                                    class="btn btn-sm btn-primary"
                                     data-bs-toggle="modal"
-                                    data-bs-target="#employee_detail">
+                                    data-bs-target="#job_detail">
                                     Details</a>
                                 </div>
                             </td>
@@ -272,9 +260,9 @@
                                 <div class="d-grid">
                                     <a 
                                     href="#" 
-                                    class="btn tn-sm btn-warning"
+                                    class="btn btn-sm btn-warning"
                                     data-bs-toggle="modal"
-                                    data-bs-target="#employee_edit">
+                                    data-bs-target="#job_edit">
                                     Edit</a>
                                 </div>
                             </td>
@@ -282,105 +270,34 @@
                                 <div class="d-grid">
                                     <a 
                                     href="#" 
-                                    class="btn tn-sm btn-danger"
+                                    class="btn btn-sm btn-danger"
                                     data-bs-toggle="modal"
-                                    data-bs-target="#employee_delete">
+                                    data-bs-target="#job_delete">
                                     Delete</a>
                                 </div>
                             </td>
                         </tr>
-                        <tr>
-                            <td>7</td>
-                            <td>885</td>
-                            <td>Racha OBA</td>
-                            <td>rachaould@gmail.com</td>
-                            <td>
-                                <div class="d-grid">
-                                    <a 
-                                    href="#" 
-                                    class="btn tn-sm btn-primary"
-                                    data-bs-toggle="modal"
-                                    data-bs-target="#employee_detail">
-                                    Details</a>
-                                </div>
-                            </td>
-                            <td>
-                                <div class="d-grid">
-                                    <a 
-                                    href="#" 
-                                    class="btn tn-sm btn-warning"
-                                    data-bs-toggle="modal"
-                                    data-bs-target="#employee_edit">
-                                    Edit</a>
-                                </div>
-                            </td>
-                            <td>
-                                <div class="d-grid">
-                                    <a 
-                                    href="#" 
-                                    class="btn tn-sm btn-danger"
-                                    data-bs-toggle="modal"
-                                    data-bs-target="#employee_delete">
-                                    Delete</a>
-                                </div>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>8</td>
-                            <td>985</td>
-                            <td>Racha OBA</td>
-                            <td>rachaould@gmail.com</td>
-                            <td>
-                                <div class="d-grid">
-                                    <a 
-                                    href="#" 
-                                    class="btn tn-sm btn-primary"
-                                    data-bs-toggle="modal"
-                                    data-bs-target="#employee_detail">
-                                    Details</a>
-                                </div>
-                            </td>
-                            <td>
-                                <div class="d-grid">
-                                    <a 
-                                    href="#" 
-                                    class="btn tn-sm btn-warning"
-                                    data-bs-toggle="modal"
-                                    data-bs-target="#employee_edit">
-                                    Edit</a>
-                                </div>
-                            </td>
-                            <td>
-                                <div class="d-grid">
-                                    <a 
-                                    href="#" 
-                                    class="btn tn-sm btn-danger"
-                                    data-bs-toggle="modal"
-                                    data-bs-target="#employee_delete">
-                                    Delete</a>
-                                </div>
-                            </td>
-                        </tr>
+                        
                     </table>
                 </div>
             </div>
         </div>
     </div>
-    <!--employees data-->
+    <!--Job data-->
 
-    <!--add employee modal-->
+    <!--add job modal-->
     <div 
         class="modal fade"
-        id="add_employee"
+        id="add_job"
         data-bs-backdrop="static"
         tabindex="-1"
         aria-hidden="true"
-        style="backdrop-filter: blur (5px);">
+        style="backdrop-filter: blur(5px);">
         <div class="modal-dialog modal-dialog-centered">
             <div class="modal-content">
                 <div class="modal-header text-bg-dark">
                     <h5 class="modal-title">
-                        Add Empolyee Details
+                        Add Job Details
                     </h5>
                     <button
                         type="button"
@@ -399,42 +316,16 @@
                                 </div>
                                 <div class="col-md-6">
                                     <div class="mb-3">
-                                        <input type="text" class="form-control form-control-sm" placeholder="First name" required>
+                                        <input type="text" class="form-control form-control-sm" placeholder="Job name" required>
                                     </div>
                                 </div>
-                                <div class="col-md-6">
-                                    <div class="mb-3">
-                                        <input type="text" class="form-control form-control-sm" placeholder="Last name" required>
-                                    </div>
-                                </div>
-                                <div class="col-md-6">
-                                    <div class="mb-3">
-                                        <input type="email" class="form-control form-control-sm" placeholder="Email ID" required>
-                                    </div>
-                                </div>
-                                <div class="col-md-6">
-                                    <div class="mb-3">
-                                        <input type="tel" class="form-control form-control-sm" placeholder="phone" required>
-                                    </div>
-                                </div>
-                                <div class="col-md-12">
-                                    <div class="mb-3">
-                                        <select aria-label="Job assigned" class="form-select form-select-sm">
-                                            <option selected> Select job for Employee</option>
-                                            <option value="graphic designer">graphic designer</option>
-                                            <option value="web designer">web designer</option>
-                                            <option value="web developer">web developer</option>
-                                            <option value="photograph">photograph</option>
-                                            <option value="manager">manager</option>
-                                        </select>
-                                    </div>
-                                </div>
+                                
                                 <div class="col-md-9">
                                     <div class="d-grid">
                                         <button
                                         type="submit"
                                         class="btn btn-sm btn-success">
-                                        Add Employee</button>
+                                        Add Job</button>
                                     </div>
                                 </div>
                                 <div class="col-md-3">
@@ -455,21 +346,21 @@
         </div>
 
     </div>
-    <!--add employee modal-->
+    <!--add job modal-->
     
-    <!--add employee details modal-->
+    <!--add Job details modal-->
     <div 
         class="modal fade"
-        id="employee_detail"
+        id="job_detail"
         data-bs-backdrop="static"
         tabindex="-1"
         aria-hidden="true"
-        style="backdrop-filter: blur (5px);">
+        style="backdrop-filter: blur(5px);">
         <div class="modal-dialog modal-dialog-centered">
             <div class="modal-content">
                 <div class="modal-header text-bg-dark">
                     <h5 class="modal-title">
-                        Empolyee Details
+                        Job Details
                     </h5>
                     <button
                         type="button"
@@ -483,32 +374,18 @@
                         <tr>
                             <th class="w-50"> ID </th>
                             <td> 1 </td>
-                        </tr> 
+                        </tr>  
                         <tr> 
-                            <th > Employee ID </th>
-                            <td>285</td>
+                            <th class="w-50">Job Name </th>
+                            <td>graphic designer </td>
                         </tr> 
-                        <tr> 
-                            <th class="w-50">First Name< /th>
-                            <td>Racha</td>
-                        </tr> 
-                        <tr> <th class="w-50">Last Name</th>
-                        <td>OBA</td></tr> 
-                        <tr> <th class="w-50">Email ID</th>
-                        <td>rachaould@gmail.com</td></tr> 
-                        <tr> <th class="w-50">phone</th>
-                        <td>+213658749685</td></tr> 
-                        <tr> <th class="w-50">Job</th>
-                        <td>web developer</td></tr> 
-                        <tr> <th class="w-50">Joining date</th>
-                        <td>23/01/2023</td></tr> 
 
                     </table>
                 </div>
                 <div class="modal-footer">
                     <a href="#" 
                     class="btn btn-sm btn-warning"
-                    data-bs-target="#employee_edit"
+                    data-bs-target="#job_edit"
                     data-bs-toggle="modal">Edit Details</a>
                     <a  href="#"
                         class="btn btn-sm btn-primary"
@@ -519,17 +396,17 @@
         </div>
 
     </div>
-    <!--add employee details modal-->
+    <!--add job details modal-->
 
 
     <!--edit  employee modal-->
     <div 
         class="modal fade"
-        id="employee_edit"
+        id="job_edit"
         data-bs-backdrop="static"
         tabindex="-1"
         aria-hidden="true"
-        style="backdrop-filter: blur (5px);">
+        style="backdrop-filter: blur(5px);">
         <div class="modal-dialog modal-dialog-centered">
             <div class="modal-content">
                 <div class="modal-header text-bg-dark">
@@ -551,44 +428,18 @@
                                         <input type="date" class="form-control form-control-sm" value="2023-01-23" required>
                                     </div>
                                 </div>
-                                <div class="col-md-6">
-                                    <div class="mb-3">
-                                        <input type="text" class="form-control form-control-sm" placeholder="First name" value="Racha" required>
-                                    </div>
-                                </div>
-                                <div class="col-md-6">
-                                    <div class="mb-3">
-                                        <input type="text" class="form-control form-control-sm" placeholder="Last name" value="OBA" required>
-                                    </div>
-                                </div>
-                                <div class="col-md-6">
-                                    <div class="mb-3">
-                                        <input type="email" class="form-control form-control-sm" placeholder="Email ID" value="rachaould@gmail.com"required>
-                                    </div>
-                                </div>
-                                <div class="col-md-6">
-                                    <div class="mb-3">
-                                        <input type="tel" class="form-control form-control-sm" placeholder="phone" value="+213659874585" required>
-                                    </div>
-                                </div>
                                 <div class="col-md-12">
                                     <div class="mb-3">
-                                        <select aria-label="Job assigned" class="form-select form-select-sm">
-                                            <option > Select job for Employee</option>
-                                            <option value="graphic designer">graphic designer</option>
-                                            <option value="web designer">web designer</option>
-                                            <option selected value="web developer">web developer</option>
-                                            <option value="photograph">photograph</option>
-                                            <option value="manager">manager</option>
-                                        </select>
+                                        <input type="text" class="form-control form-control-sm" placeholder="Job name" value="graphic designer" required>
                                     </div>
                                 </div>
+                                
                                 <div class="col-md-9">
                                     <div class="d-grid">
                                         <button
                                         type="submit"
                                         class="btn btn-sm btn-success">
-                                        Edit Employee Details</button>
+                                        Edit Job Details</button>
                                     </div>
                                 </div>
                                 <div class="col-md-3">
@@ -609,12 +460,12 @@
         </div>
 
     </div>
-    <!--add employee edit modal-->
+    <!--add job edit modal-->
     
     <!-- delete employee modal-->
     <div 
         class="modal fade"
-        id="employee_delete"
+        id="job_delete"
         data-bs-backdrop="static"
         tabindex="-1"
         aria-hidden="true"
@@ -623,7 +474,7 @@
             <div class="modal-content">
                 <div class="modal-header text-bg-white">
                     <h5 class="modal-title">
-                        Do you really want to delete <strong>"Racha Oba"</strong>  ?
+                        Do you really want to delete the job  <strong>"graphic designer"</strong>  ?
                     </h5>
                     <button
                         type="button"
@@ -662,7 +513,7 @@
         </div>
 
     </div>
-    <!--delete employee modal-->
+    <!--delete job modal-->
 
 
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"></script> 
