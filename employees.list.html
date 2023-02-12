@@ -75,7 +75,7 @@
     <div class="container">
         <div class="row justify-content-center">
             <!--side bar-->
-            <div class="col-md-2">
+            <div class="col-md-3">
                 <div class="list-group shadow-sm small mb-3">
                     <div class="list-group-item active">
                         Employee Data
@@ -95,13 +95,13 @@
                 </div>
             </div>
             <!--side bar-->
-            <div class="col-md-10">
+            <div class="col-md-9">
                 <div class="card shadow-sm border-0 mb-3">
                     <div class="card-header text-bg-dark text-center">
                         employees list
                     </div>
-                    <table class="table table-bordered small table-sm allign-middle mb-0">
-                        <tr class="table-secondary"></tr>
+                    <table class="table table-bordered small table-sm align-middle mb-0">
+                        <tr class="table-secondary "></tr>
                         <th>ID</th>
                         <th>Employee ID</th>
                         <th>Name</th>
@@ -457,7 +457,214 @@
     </div>
     <!--add employee modal-->
     
+    <!--add employee details modal-->
+    <div 
+        class="modal fade"
+        id="employee_detail"
+        data-bs-backdrop="static"
+        tabindex="-1"
+        aria-hidden="true"
+        style="backdrop-filter: blur (5px);">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header text-bg-dark">
+                    <h5 class="modal-title">
+                        Empolyee Details
+                    </h5>
+                    <button
+                        type="button"
+                        class="btn-close btn-close-white"
+                        data-bs-dismiss="modal"
+                        aria-label="close"></button>
+                </div>
+                
+                <div class="modal-body p-0">
+                    <table class="table table-bordered small mb-0">
+                        <tr>
+                            <th class="w-50"> ID </th>
+                            <td> 1 </td>
+                        </tr> 
+                        <tr> 
+                            <th > Employee ID </th>
+                            <td>285</td>
+                        </tr> 
+                        <tr> 
+                            <th class="w-50">First Name< /th>
+                            <td>Racha</td>
+                        </tr> 
+                        <tr> <th class="w-50">Last Name</th>
+                        <td>OBA</td></tr> 
+                        <tr> <th class="w-50">Email ID</th>
+                        <td>rachaould@gmail.com</td></tr> 
+                        <tr> <th class="w-50">phone</th>
+                        <td>+213658749685</td></tr> 
+                        <tr> <th class="w-50">Job</th>
+                        <td>web developer</td></tr> 
+                        <tr> <th class="w-50">Joining date</th>
+                        <td>23/01/2023</td></tr> 
+
+                    </table>
+                </div>
+                <div class="modal-footer">
+                    <a href="#" 
+                    class="btn btn-sm btn-warning"
+                    data-bs-target="#employee_edit"
+                    data-bs-toggle="modal">Edit Details</a>
+                    <a  href="#"
+                        class="btn btn-sm btn-primary"
+                        aria-label="class"
+                        data-bs-dismiss="modal">Close</a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <!--add employee details modal-->
+
+
+    <!--edit  employee modal-->
+    <div 
+        class="modal fade"
+        id="employee_edit"
+        data-bs-backdrop="static"
+        tabindex="-1"
+        aria-hidden="true"
+        style="backdrop-filter: blur (5px);">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header text-bg-dark">
+                    <h5 class="modal-title">
+                        Edit Details
+                    </h5>
+                    <button
+                        type="button"
+                        class="btn-close btn-close-white"
+                        data-bs-dismiss="modal"
+                        aria-label="close"></button>
+                </div>
+                <div class="modal-body">
+                    <form >
+                        <div class="container">
+                            <div class="row gx-3">
+                                <div class="col-md-12">
+                                    <div class="mb-3">
+                                        <input type="date" class="form-control form-control-sm" value="2023-01-23" required>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="mb-3">
+                                        <input type="text" class="form-control form-control-sm" placeholder="First name" value="Racha" required>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="mb-3">
+                                        <input type="text" class="form-control form-control-sm" placeholder="Last name" value="OBA" required>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="mb-3">
+                                        <input type="email" class="form-control form-control-sm" placeholder="Email ID" value="rachaould@gmail.com"required>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="mb-3">
+                                        <input type="tel" class="form-control form-control-sm" placeholder="phone" value="+213659874585" required>
+                                    </div>
+                                </div>
+                                <div class="col-md-12">
+                                    <div class="mb-3">
+                                        <select aria-label="Job assigned" class="form-select form-select-sm">
+                                            <option > Select job for Employee</option>
+                                            <option value="graphic designer">graphic designer</option>
+                                            <option value="web designer">web designer</option>
+                                            <option selected value="web developer">web developer</option>
+                                            <option value="photograph">photograph</option>
+                                            <option value="manager">manager</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col-md-9">
+                                    <div class="d-grid">
+                                        <button
+                                        type="submit"
+                                        class="btn btn-sm btn-success">
+                                        Edit Employee Details</button>
+                                    </div>
+                                </div>
+                                <div class="col-md-3">
+                                    <div class="d-grid">
+                                        <button
+                                        type="button"
+                                        class="btn btn-sm btn-warning"
+                                        data-bs-dismiss="modal"
+                                        aria-label="close">
+                                        Cancel</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <!--add employee edit modal-->
     
+    <!-- delete employee modal-->
+    <div 
+        class="modal fade"
+        id="employee_delete"
+        data-bs-backdrop="static"
+        tabindex="-1"
+        aria-hidden="true"
+        style="backdrop-filter: blur(5px);">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header text-bg-white">
+                    <h5 class="modal-title">
+                        Do you really want to delete <strong>"Racha Oba"</strong>  ?
+                    </h5>
+                    <button
+                        type="button"
+                        class="btn-close btn-close-dark"
+                        data-bs-dismiss="modal"
+                        aria-label="close"></button>
+                </div>
+                <div class="modal-body">
+                    <form >
+                        <div class="container">
+                            <div class="row gx-3 justify-content-center">
+                                
+                                <div class="col-md-4">
+                                    <div class="d-grid">
+                                        <button
+                                        type="submit"
+                                        class="btn btn-sm btn-danger">
+                                        Delete </button>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="d-grid">
+                                        <button
+                                        type="button"
+                                        class="btn btn-sm btn-warning"
+                                        data-bs-dismiss="modal"
+                                        aria-label="close">
+                                        Cancel</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <!--delete employee modal-->
+
+
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"></script> 
     <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
     <script src="https://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
